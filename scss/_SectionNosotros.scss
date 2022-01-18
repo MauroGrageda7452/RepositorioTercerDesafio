@@ -1,0 +1,34 @@
+/* inicio de section nosotros.hmtl */
+.contenedor__CajaNosotros{    
+    & .CajaQuienesSomos{
+        & .QuienesSomos{
+            background-color: rgb(35, 26, 46);
+            border: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(125, 16, 175);
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+    }
+    
+
+    & .CajaTextDueños{
+        & .TextDueños{
+            background-color: rgb(35, 26, 46);
+            border: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(125, 16, 175);
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    }
+    & .CajaTiendaImg{
+        & .TiendaImg{
+            border: none;
+            width: 100%;
+            height: 93%;
+        }
+    } 
+}
+/* cierre de section nosotros.hmtl */
+/*----------------------------- */
