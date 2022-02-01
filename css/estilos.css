@@ -29,7 +29,6 @@ header div {
   height: 40px;
 }
 header div a .img-thumbnail {
-  float: left;
   opacity: 0.5;
 }
 header div a.img-thumbnail:hover {
@@ -419,11 +418,10 @@ footer {
   color: white;
   font-style: italic;
 }
-footer a .img-thumbnail {
-  float: left;
+footer div a .img-thumbnail {
   opacity: 0.5;
 }
-footer a.img-thumbnail:hover {
+footer div a.img-thumbnail:hover {
   opacity: 1;
 }
 footer div h5 {

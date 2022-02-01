@@ -7,16 +7,15 @@ footer{
     color: rgb(255, 255, 255);
     font-style: italic;
 
-    & a{ 
-        & .img-thumbnail{
-            float: left;
-            opacity: 0.5;
-        }
-        &.img-thumbnail:hover{
-            opacity: 1.0;
-        }
-    }
     & div{
+        & a{ 
+            & .img-thumbnail{
+                opacity: 0.5;
+            }
+            &.img-thumbnail:hover{
+                opacity: 1.0;
+            }
+        }
         & h5{
             text-align: center;
         }
@@ -43,7 +42,7 @@ footer{
             & .nav-link{
                 color: rgb(255, 255, 255);
             }
-        }
+        } 
     }
 }
 /* Cierre de footer paginas */
