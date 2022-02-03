@@ -23,8 +23,9 @@ footer{
         & ul{
             text-transform: capitalize;
             font-size: 14px;
-            display: flex;
-            justify-content: flex-end;
+            // display: flex;
+            // justify-content: flex-end;
+            text-align: center;
             margin-bottom: 0%;
 
             & .nav-item{
