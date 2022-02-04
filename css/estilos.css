@@ -354,12 +354,14 @@ header nav ul .nav-item .nav-link:active {
   color: #7d10af;
   margin-bottom: 5px;
   font-size: 20px;
+  opacity: 0.8;
 }
 .contenedor__CajaNosotros .CajaTextDueños .TextDueños {
   background-color: #231a2e;
   border: none;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #7d10af;
+  opacity: 0.8;
   font-size: 20px;
   margin-bottom: 5px;
 }
@@ -424,14 +426,11 @@ footer div a .img-thumbnail {
 footer div a.img-thumbnail:hover {
   opacity: 1;
 }
-footer div h5 {
-  text-align: center;
-}
 footer div ul {
   text-transform: capitalize;
   font-size: 14px;
-  text-align: center;
   margin-bottom: 0%;
+  list-style-type: none;
 }
 footer div ul .nav-item {
   list-style: none;
@@ -792,7 +791,6 @@ footer div ul .nav-link {
   .contenedor__CajaNosotros {
     grid-template-columns: 1fr 1fr;
     display: grid;
-    grid-row-gap: 17.5em;
     grid-column-gap: 30px;
     padding-right: 32px;
     padding-left: 32px;
