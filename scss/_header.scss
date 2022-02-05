@@ -1,12 +1,11 @@
 // inicio de header 
 header{
-    height: 100px;
     width: 100%;
+    padding-bottom: 16px;
     & div{
         display: flex;
         margin-top: 1%;
         width: 100%;
-        height: 40px;
 
         & a{ 
             & .img-thumbnail{
@@ -36,22 +35,21 @@ header{
             }
         }
     }
-    & nav{
+    & nav{           
+        background-color: rgb(46, 37, 58);
+        margin-top: 1rem;
         & ul{
+            margin-left: auto;
             width: 100%;
             list-style: none;
-            justify-content: space-around;
             background-color: rgb(46, 37, 58);
-            display: flex;
-            font-size: 25px;
-            flex-wrap: wrap;
-
             & .nav-item{
+                font-size: 1rem;
                 & .nav-link{
-                    color: darkcyan;
+                    color: darkcyan !important;
                     text-decoration: none;
                     text-transform: capitalize;
-                    flex-direction: row;
+                    padding: 3px 0;
                 }
                 & .nav-link:hover{
                     background-color: aqua;

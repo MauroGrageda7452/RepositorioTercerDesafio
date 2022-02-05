@@ -14,14 +14,13 @@ body {
 }
 
 header {
-  height: 100px;
   width: 100%;
+  padding-bottom: 16px;
 }
 header div {
   display: flex;
   margin-top: 1%;
   width: 100%;
-  height: 40px;
 }
 header div a .img-thumbnail {
   opacity: 0.5;
@@ -48,20 +47,24 @@ header div h1 {
     opacity: 1;
   }
 }
+header nav {
+  background-color: #2e253a;
+  margin-top: 1rem;
+}
 header nav ul {
+  margin-left: auto;
   width: 100%;
   list-style: none;
-  justify-content: space-around;
   background-color: #2e253a;
-  display: flex;
-  font-size: 25px;
-  flex-wrap: wrap;
+}
+header nav ul .nav-item {
+  font-size: 1rem;
 }
 header nav ul .nav-item .nav-link {
-  color: darkcyan;
+  color: darkcyan !important;
   text-decoration: none;
   text-transform: capitalize;
-  flex-direction: row;
+  padding: 3px 0;
 }
 header nav ul .nav-item .nav-link:hover {
   background-color: aqua;
@@ -342,13 +345,15 @@ header nav ul .nav-item .nav-link:active {
 /* cierre de section promos.html */
 /*----------------------------- */
 /* inicio de section nosotros.hmtl */
+.contenedor__CajaNosotros {
+  margin-bottom: 1.5em;
+}
 .contenedor__CajaNosotros .CajaQuienesSomos .QuienesSomos {
   background-color: #231a2e;
   border: none;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #7d10af;
-  margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 1em;
   opacity: 0.8;
 }
 .contenedor__CajaNosotros .CajaTextDueños .TextDueños {
@@ -357,13 +362,10 @@ header nav ul .nav-item .nav-link:active {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #7d10af;
   opacity: 0.8;
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 1em;
 }
 .contenedor__CajaNosotros .CajaTiendaImg .TiendaImg {
   border: none;
-  width: 100%;
-  height: 93%;
 }
 
 /* cierre de section nosotros.hmtl */
@@ -444,15 +446,6 @@ footer div ul .nav-link {
 /* Cierre de footer paginas */
 /*----------------------------- */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  section {
-    height: 1375px;
-    width: 100%;
-  }
-
-  header {
-    height: 210px;
-  }
-
   .set_up {
     width: 100%;
   }
@@ -657,8 +650,6 @@ footer div ul .nav-link {
   .contenedor__CajaNosotros .TiendaImg {
     margin-top: 10%;
     margin-bottom: 10%;
-    width: 100%;
-    height: 400px;
   }
 
   .contenedor--sectioncontacto {
@@ -680,11 +671,15 @@ footer div ul .nav-link {
   }
 
   footer div ul {
-    font-size: 10px;
-    margin-bottom: 0%;
+    font-size: 1em;
+    padding-bottom: 16px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header .nav {
+    text-align: center;
+  }
+
   .contenedor__productos {
     grid-template-columns: 1fr 1fr;
     padding-left: 5%;
@@ -757,6 +752,10 @@ footer div ul .nav-link {
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1920px) {
+  header nav div ul .nav-item {
+    font-size: 1.5rem;
+  }
+
   .contenedor__productos {
     grid-template-columns: 1fr 1fr;
     padding-left: 2%;
@@ -789,6 +788,7 @@ footer div ul .nav-link {
     grid-column-gap: 30px;
     padding-right: 32px;
     padding-left: 32px;
+    font-size: 1.7em;
   }
   .contenedor__CajaNosotros .CajaQuienesSomos {
     grid-column: 1/1;
