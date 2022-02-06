@@ -14,20 +14,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-    <!-- fila de logo + nav -->
+    <!-- fila de logo+ nav-->
     <header> <!-- Header, tenes lo visible lo que usuario va a ver-->
-        <div>
-            <a href="../index.html"><img src="../multimedia/Logo.jpg" alt="reparacion de icono de computadora" allowfullscreen="" class="img-thumbnail" width="50px" height= "32px" loading="lazy"></a>
-            <h1>PROMOS</h1>
+        <div class="col-12">
+            <a  href="index.html"><img src="/multimedia/Logo.jpg" alt="reparacion de icono de computadora" allowfullscreen="" class="img-thumbnail" width="62px" height= "32px" loading="lazy"></a>
+            <h1>¡PROMOS!</h1>
         </div>
-        <nav>
-            <ul>
-                <li class="nav-item"> <a class="nav-link" href="../index.html">INICIO</a></li>
-                <li class="nav-item"> <a class="nav-link" href="productos.html">PRODUCTOS</a></li>
-                <li class="nav-item"> <a class="nav-link disabled" href="#">PROMOS</a></li>
-                <li class="nav-item"> <a class="nav-link" href="nosotros.html">NOSOTROS</a></li>
-                <li class="nav-item"> <a class="nav-link" href="contacto.html">CONTACTO</a></li>
-            </ul>
+        <!-- nav + logo -->
+        <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
+            <a class="navbar-brand" href="index.html"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" id="nav--bar__item">
+                    <li class="nav-item offset-md-1  offset-xl-1">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item offset-md-1  offset-xl-2">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item offset-md-1  offset-xl-1">
+                        <a class="nav-link" href="#">Promos</a>
+                    </li>
+                    <li class="nav-item offset-md-1  offset-xl-1">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item offset-md-1  offset-xl-2">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>      
+                </ul>
+            </div>  
         </nav>
     </header>
 
@@ -36,9 +53,59 @@
     <!-- fila de informacion de mi sitio-->
     <section>
         <article>
-            <div class="contenedor__promos">
-                <img class="caja__promos PromoImg"src="../multimedia/black-Friday.jpg" alt="promocion black friday" width="20%" height="150px">
-                <h3 class=" caja__promos PromoText"> Promo del Mes</h3>
+            <div class="caja__promos">
+                <div class="contenedor__promos">
+                    <div class="info__promo">
+                        <div>Recibis 30% de descuento hasta 10 cuotas sin interes.</div>
+                        <div>En cualquiera de nuestros productos</div>
+                    </div>
+                    <img class="img__promo" src="../multimedia/promo-black-friday.jpg" alt="foto de Fab Dupont">
+                    <h3 class="nombre__promo">Promo Black Friday</h3>
+                </div>
+                <div class="contenedor__promos">
+                    <div class="info__promo">
+                        <div>Recibis un descuento de 25% pagando en efectivo o tarjeta de debito en este verano 2022.</div>
+                        <div>En cualquiera de nuestros productos disponibles.</div>
+                    </div>
+                    <img class="img__promo" src="../multimedia/promo-verano.jpg"alt="foto de Andrew Scheps">
+                    <h3 class="nombre__promo">Promo Verano</h3>
+                </div>
+                <div class="contenedor__promos">
+                    <div class="info__promo">
+                        <div>Recibis un descuento del 15% pagando con tarjeta de credito.</div>
+                        <div>Solo en mouse y teclados.</div>
+
+                    </div>
+                    <img class="img__promo" src="../multimedia/oferta-navidad.jpg" alt="foto de Cris Lord Alge">
+                    <h3 class="nombre__promo">Promo Navidad</h3>
+                </div>
+                <div class="contenedor__promos">
+                    <div class="info__promo">
+                        <div>Recibis un descuento del 15% pagando con tarjeta de credito.</div>
+                        <div>En pc's y pantallas.</div>
+
+                    </div>
+                    <img class="img__promo" src="../multimedia/promo-fin-de-año.png" alt="foto de Cris Lord Alge">
+                    <h3 class="nombre__promo">Promo Fin de Año</h3>
+                </div>
+                <div class="contenedor__promos">
+                    <div class="info__promo">
+                        <div>Recibis un descuento del 25% sin interes de hasta 6 cuotas.</div>
+                        <div>Teniendo un monto mayor a $20000, con envio incluido. </div>
+
+                    </div>
+                    <img class="img__promo" src="../multimedia/cyber-monday-promo.jpg" alt="foto de Cris Lord Alge">
+                    <h3 class="nombre__promo">Promo Cyber Monday</h3>
+                </div>
+                <div class="contenedor__promos">
+                    <div class="info__promo">
+                        <div>Recibis un descuento del 10% acumulativo.</div>
+                        <div>Solo en pantalla modelo ASUS, con envio incluido.</div>
+
+                    </div>
+                    <img class="img__promo" src="../multimedia/promo-monitor.jpg" alt="foto de Cris Lord Alge">
+                    <h3 class="nombre__promo">Promo de la semana</h3>
+                </div>
             </div>
         </article>
     </section>

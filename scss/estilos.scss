@@ -9,7 +9,7 @@ $borde-tabla-productos: 2px solid #000000;
 }
 
 body{   
-    background-image:url(../multimedia/fondo.jpg);
+    background-image:url(../multimedia/Hexagon.svg);
     background-size: cover; 
     background-position: center center;
     background-attachment: fixed;  
@@ -37,11 +37,16 @@ body{
     // index.html 
     .set_up{
         width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+
     }
     // Una columna por ocho filas
 
     .contenedor__productos{
         grid-template-columns: 1fr;
+        padding-right: 5%;
+        padding-left: 5%;
 
         & .caja__productos{
             width: 290px;
@@ -87,50 +92,55 @@ body{
             grid-column: 1/1;
             grid-row: 8/8;        
         }
+        & .imgs__prod{
+            margin-bottom: 16px;
+        }
     }
 
     // producto.html 
     .Contenedor__Prod{
-        grid-template-columns: 2fr 2fr;
-    
+        grid-template-columns: 2fr;
+        padding-left: 5%;
+        padding-right: 5%;
+
         & .modelo__teclado_1{
             grid-column: 1/1;
             grid-row: 2/2;
         }
     
-    
+        
         & .modelo__teclado_2{
-            grid-column: 2/2;
-            grid-row: 2/2;
+            grid-column: 1/1;
+            grid-row: 6/6;
         }
         
         & .modelo__mouse_1{
             grid-column: 1/1;
-            grid-row: 6/6;
+            grid-row: 10/10;
         }
         
         & .modelo__mouse_2{
-            grid-column: 2/2;
-            grid-row: 6/6;
+            grid-column: 1/1;
+            grid-row: 14/14;
         }
         
         & .modelo__pantalla_1{
             grid-column: 1/1;
-            grid-row: 10/10;
+            grid-row: 18/18;
         }
         
         & .modelo__pantalla_2{
-            grid-column: 2/2;
-            grid-row:10/10;
+            grid-column: 1/1;
+            grid-row:22/22;
         }
         
         & .modelo__pc_1{
             grid-column: 1/1;
-            grid-row:14/14;
+            grid-row:26/26;
         }
         & .modelo__pc_2{
-            grid-column: 2/2;
-            grid-row:14/14;
+            grid-column: 1/1;
+            grid-row:30/30;
         }
     
         & .carac_teclado_1{
@@ -139,37 +149,37 @@ body{
         }
         
         & .carac_teclado_2{
-            grid-row: 3/3;
-            grid-column: 2/2;
+            grid-row: 7/7;
+            grid-column: 1/1;
         }
     
         & .carac__mouse_1{
-            grid-row: 7/7;
+            grid-row: 11/11;
             grid-column: 1/1;
         }
     
         & .carac__mouse_2{
-            grid-row: 7/7;
-            grid-column: 2/2;
+            grid-row: 15/15;
+            grid-column: 1/1;
         }
     
         & .carac__pantalla_1{
-            grid-row: 11/11;
+            grid-row: 19/19;
             grid-column: 1/1;
         }
     
         & .carac__pantalla_2{
-            grid-row: 11/11;
-            grid-column: 2/2;
+            grid-row: 23/23;
+            grid-column: 1/1;
         }
         & .carac__pc_1{
-            grid-row: 15/15;
+            grid-row: 27/27;
             grid-column: 1/1;    
         }
     
         & .carac__pc_2{
-            grid-row: 15/15;
-            grid-column: 2/2;    
+            grid-row: 31/31;
+            grid-column: 1/1;    
         }
     
         & .precio_teclado_1{
@@ -178,38 +188,38 @@ body{
         }
         
         & .precio_teclado_2{
-            grid-column: 2/2;
-            grid-row: 4/4;
-        }
-        
-        & .precio__mouse_1{
             grid-column: 1/1;
             grid-row: 8/8;
         }
         
+        & .precio__mouse_1{
+            grid-column: 1/1;
+            grid-row: 12/12;
+        }
+        
         & .precio__mouse_2{
-            grid-column: 2/2;
-            grid-row: 8/8;
+            grid-column: 1/1;
+            grid-row: 16/16;
         }
         
         & .precio__pantalla_1{
             grid-column:1/1;
-            grid-row:12/12;
+            grid-row:20/20;
         }
         
         & .precio__pantalla_2{
-            grid-column:2/2;
-            grid-row:12/12;
+            grid-column:1/1;
+            grid-row:24/24;
         }
         
         & .precio__pc_1{
             grid-column:1/1;
-            grid-row:16/16;
+            grid-row:28/28;
         }
         
         & .precio__pc_2{
-            grid-column:2/2;
-            grid-row:16/16;
+            grid-column:1/1;
+            grid-row:32/32;
         }
         
         & .img__teclado_1 , .img__teclado_2 , .img__mouse_1, .img__mouse_2, .img__pantalla_1, .img__pantalla_2, .img__pc_1, .img__pc_2{
@@ -222,36 +232,36 @@ body{
         }
         
         & .img__teclado_2{
-            grid-column: 2/2;
-            grid-row: 1/1;
+            grid-column: 1/1;
+            grid-row: 5/5;
         }
         
         & .img__mouse_1{
             grid-column: 1/1;
-            grid-row: 5/5;
+            grid-row: 9/9;
         }
         
         & .img__mouse_2{
-            grid-row: 5/5;
-            grid-column: 2/2;
+            grid-row: 13/13;
+            grid-column: 1/1;
         }
         & .img__pantalla_1{
-            grid-row: 9/9;
+            grid-row: 17/17;
             grid-column: 1/1;
         }
         & .img__pantalla_2{
-            grid-row: 9/9;
-            grid-column: 2/2;
+            grid-row: 21/21;
+            grid-column: 1/1;
         }
         
         & .img__pc_1{
             grid-column:1/1;
-            grid-row:13/13;
+            grid-row:25/25;
         }
         
         & .img__pc_2{
-            grid-column:2/2;
-            grid-row:13/13;
+            grid-column:1/1;
+            grid-row:29/29;
         }
         
         & .precio_teclado_1, .precio_teclado_2, .precio__mouse_1 , .precio__mouse_2, .precio__pantalla_1, .precio__pantalla_2, .precio__pc_1, .precio__pc_2{
@@ -259,24 +269,24 @@ body{
         }
     
         & .modelo__teclado_1 , .modelo__teclado_2, .modelo__mouse_1, .modelo__mouse_2, .modelo__pantalla_1, .modelo__pantalla_2, .modelo__pc_1, .modelo__pc_2{
-            font-size: 17px;
+            font-size: 1.2em;
         }
     }
     
 
-    // promos.html 
-    .contenedor__promos{
-        & .PromoImg{ 
-            width: 90%;
-            height: 550px;
-        } 
-        & .PromoText{
-            margin-left: 25.5%;
-            margin-right: 25.5%;
+    // promos.html
+    .caja__promos{
+        & .contenedor__promos{
+            & .img__promo{
+                height: 250px;
+                width: 250px;
+            }
+            & .info__promo{
+                height: 250px;
+                width: 250px;
+            }
         }
-    
     }
-
 
     // nosotros.html 
     .contenedor__CajaNosotros{
@@ -313,7 +323,6 @@ body{
             height: 625px;
             width: 100%;
         } 
-
     }
 
     // footer paginas
@@ -332,13 +341,15 @@ body{
 
 @media only screen and (min-width:768px) and (max-width:1023px){
     
-    header .nav{
-        text-align: center;
-    }
     // index.html
     .contenedor__productos{
         grid-template-columns: 1fr 1fr;
         padding-left: 5%;
+        padding-right: 5%;
+        
+        & .imgs__prod{
+            margin-bottom: 16px;
+        }
     }
 
     .set_up{
@@ -347,7 +358,170 @@ body{
     }
     // producto.html 
     .Contenedor__Prod{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 5%;
+        padding-right: 5%;
+        & .modelo__teclado_1{
+            grid-column: 1/1;
+            grid-row: 2/2;
+        }
+    
         
+        & .modelo__teclado_2{
+            grid-column: 2/2;
+            grid-row: 2/2;
+        }
+        
+        & .modelo__mouse_1{
+            grid-column: 3/3;
+            grid-row: 2/2;
+        }
+        
+        & .modelo__mouse_2{
+            grid-column: 1/1;
+            grid-row: 6/6;
+        }
+        
+        & .modelo__pantalla_1{
+            grid-column: 2/2;
+            grid-row: 6/6;
+        }
+        
+        & .modelo__pantalla_2{
+            grid-column: 3/3;
+            grid-row:6/6;
+        }
+        
+        & .modelo__pc_1{
+            grid-column: 1/1;
+            grid-row:10/10;
+        }
+        & .modelo__pc_2{
+            grid-column: 3/3;
+            grid-row:10/10;
+        }
+    
+        & .carac_teclado_1{
+            grid-row: 3/3;
+            grid-column: 1/1;
+        }
+        
+        & .carac_teclado_2{
+            grid-row: 3/3;
+            grid-column: 2/2;
+        }
+    
+        & .carac__mouse_1{
+            grid-row: 3/3;
+            grid-column: 3/3;
+        }
+    
+        & .carac__mouse_2{
+            grid-row: 7/7;
+            grid-column: 1/1;
+        }
+    
+        & .carac__pantalla_1{
+            grid-row: 7/7;
+            grid-column: 2/2;
+        }
+    
+        & .carac__pantalla_2{
+            grid-row: 7/7;
+            grid-column: 3/3;
+        }
+        & .carac__pc_1{
+            grid-row: 11/11;
+            grid-column: 1/1;    
+        }
+    
+        & .carac__pc_2{
+            grid-row: 11/11;
+            grid-column: 3/3;    
+        }
+    
+        & .precio_teclado_1{
+            grid-column: 1/1;
+            grid-row: 4/4;
+        }
+        
+        & .precio_teclado_2{
+            grid-column: 2/2;
+            grid-row: 4/4;
+        }
+        
+        & .precio__mouse_1{
+            grid-column: 3/3;
+            grid-row: 4/4;
+        }
+        
+        & .precio__mouse_2{
+            grid-column: 1/1;
+            grid-row: 8/8;
+        }
+        
+        & .precio__pantalla_1{
+            grid-column:2/2;
+            grid-row:8/8;
+        }
+        
+        & .precio__pantalla_2{
+            grid-column:3/3;
+            grid-row:8/8;
+        }
+        
+        & .precio__pc_1{
+            grid-column:1/1;
+            grid-row:12/12;
+        }
+        
+        & .precio__pc_2{
+            grid-column:3/3;
+            grid-row:12/12;
+        }
+        
+    
+        & .img__teclado_1{
+            grid-column: 1/1;
+            grid-row: 1/1;
+        }
+        
+        & .img__teclado_2{
+            grid-column: 2/2;
+            grid-row: 1/1;
+        }
+        
+        & .img__mouse_1{
+            grid-column: 3/3;
+            grid-row: 1/1;
+        }
+        
+        & .img__mouse_2{
+            grid-row: 5/5;
+            grid-column: 1/1;
+        }
+        & .img__pantalla_1{
+            grid-row: 5/5;
+            grid-column: 2/2;
+        }
+        & .img__pantalla_2{
+            grid-row: 5/5;
+            grid-column: 3/3;
+        }
+        
+        & .img__pc_1{
+            grid-column:1/1;
+            grid-row:9/9;
+        }
+        
+        & .img__pc_2{
+            grid-column:3/3;
+            grid-row:9/9;
+        }
+
+        & .imgs__prod{
+            padding-bottom: 2%;
+        }
         & .img__teclado_1 , .img__teclado_2 , .img__mouse_1, .img__mouse_2, .img__pantalla_1, .img__pantalla_2, .img__pc_1, .img__pc_2{
             height: 220px;
         }
@@ -361,6 +535,18 @@ body{
         }
     }
     // promos.html 
+    .caja__promos{
+        & .contenedor__promos{
+            & .img__promo{
+                height: 275px;
+                width: 275px;
+            }
+            & .info__promo{
+                height: 275px;
+                width: 275px;
+            }
+        }
+    }
 
     .contenedor__promos{
         
@@ -446,6 +632,9 @@ body{
         & .caja__productos{
             width: 100%;
         }
+        & .imgs__prod{
+            padding-bottom: 2%;
+        }
     }
     .set_up{
         width: 60%;
@@ -454,6 +643,12 @@ body{
 
     // productos.html
     .Contenedor__Prod{
+        padding-left: 5%;
+        padding-right: 5%;
+        
+        & .imgs__prod{
+            margin-bottom: 16px;
+        }
         & .img__teclado_1 , .img__teclado_2 , .img__mouse_1, .img__mouse_2, .img__pantalla_1, .img__pantalla_2, .img__pc_1, .img__pc_2{
             height: 250px;
         }
@@ -464,6 +659,20 @@ body{
 
         & .modelo__teclado_1 , .modelo__teclado_2, .modelo__mouse_1, .modelo__mouse_2, .modelo__pantalla_1, .modelo__pantalla_2, .modelo__pc_1, .modelo__pc_2{
             font-size: 18px;
+        }
+    }
+
+    // promos.hmtl
+    .caja__promos{
+        & .contenedor__promos{
+            & .img__promo{
+                height: 300px;
+                width: 300px;
+            }
+            & .info__promo{
+                height: 300px;
+                width: 300px;
+            }
         }
     }
 
