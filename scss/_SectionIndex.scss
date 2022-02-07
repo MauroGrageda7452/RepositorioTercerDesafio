@@ -1,0 +1,93 @@
+
+// Inicio de Section , pagina index.html
+
+.set_up{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 16px;
+    display: flex;
+}    
+// dos columnas por 4 filas
+
+.contenedor__productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-column-gap: 4%;
+    
+    & .caja__productos{
+        border: none;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+
+        & a{
+            text-decoration: none;
+            color: rgb(125, 16, 175);
+            font-size: 25px;
+        }
+
+        & a:hover{
+            background-color:  rgb(100, 24, 136);
+        }
+
+        & a:active{
+            background-color: cyan;
+        }
+    }
+
+    @each $producto in teclado , mouse , pantalla , pc{
+        .#{$producto}__caja{
+            background-color: $fondo-caja-productos;
+            @if $producto == teclado{
+                grid-row: 1/1;
+                grid-column:1/1;
+            }@else if $producto == mouse{
+                grid-row: 1/1;
+                grid-column: 2/2;
+            }@else if $producto == pantalla{
+                grid-column: 1/1;
+                grid-row: 3/3;
+            }@else{
+                grid-column: 2/2;
+                grid-row: 3/3;
+            }
+        }
+    }
+
+    & .img__TecladoCaja{
+        grid-column: 1/1;
+        grid-row: 2/2;
+    }
+
+    & .img__MouseCaja{
+        grid-column: 2/2;
+        grid-row: 2/2;
+    }
+
+    & .img__PantallaCaja{
+        grid-column: 1/1;
+        grid-row: 4/4;
+    }
+
+    & .img__PcCaja{
+        grid-column: 2/2;
+        grid-row: 4/4; 
+    }
+
+    & .imgs__prod{
+        width: 100%;
+        height: 240px;
+        transition: all .3s ease-in-out;
+    }
+
+    & .imgs__prod:hover{
+        transform: scale(0.9);
+        transform-origin: center center;
+    }
+}
+
+
+// fin de Section de Index.html
+// ------------------------------

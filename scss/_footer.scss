@@ -1,0 +1,45 @@
+
+/* Inicio de footer paginas */
+footer{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    & .caja_logo{
+        padding-bottom: 2%;
+        & .img__logo{
+            opacity: 0.5;
+        }
+        & .img__logo:hover{
+            opacity: 1.0;
+        }
+    }
+    & div{
+        & ul{
+            text-transform: capitalize;
+            font-size: 14px;
+            margin-bottom: 0%;
+            list-style-type: none;
+            & .nav-item{
+                list-style: none;
+                margin-right: 10px;
+            }
+            & .nav-link:hover{
+                background-color: rgb(211, 211, 211);
+            }
+
+            & .nav-link:active{
+                background-color:  rgb(100, 24, 136);
+            }
+
+            & .nav-link{
+                color: rgb(255, 255, 255);
+            }
+        } 
+    }
+}
+/* Cierre de footer paginas */
+/*----------------------------- */
+
+

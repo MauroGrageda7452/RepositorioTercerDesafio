@@ -1,0 +1,198 @@
+/* inicio de Section de productos.html */
+.Contenedor__Prod{
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    display: grid;
+    width: 100%;
+    height: 30%;
+    grid-column-gap: 2%;
+
+    & .caja__producto{
+        border: none;
+    }
+
+    & .modelo__teclado_1 , .modelo__teclado_2 , .modelo__mouse_1 , .modelo__mouse_2 , .modelo__pantalla_1 , .modelo__pantalla_2 , .modelo__pc_1 ,.modelo__pc_2{
+        grid-column: 1/1;
+        grid-row: 2/2;
+        background-color: rgb(35, 26, 46);
+        font-size: 18px;
+        text-align: center;
+        color: aliceblue;
+    }
+
+    & .modelo__teclado_2{
+        grid-column: 2/2;
+        grid-row: 2/2;
+    }
+    
+    & .modelo__mouse_1{
+        grid-column: 3/3;
+        grid-row: 2/2;
+    }
+    
+    & .modelo__mouse_2{
+        grid-column: 4/4;
+        grid-row: 2/2;
+    }
+    
+    & .modelo__pantalla_1{
+        grid-column: 1/1;
+        grid-row: 6/6;
+    }
+    
+    & .modelo__pantalla_2{
+        grid-column: 2/2;
+        grid-row:6/6;
+    }
+    
+    & .modelo__pc_1{
+        grid-column: 3/3;
+        grid-row:6/6;
+    }
+    & .modelo__pc_2{
+        grid-column: 4/4;
+        grid-row:6/6;
+    }
+    
+    & .carac_teclado_1, .carac_teclado_2 , .carac__mouse_1, .carac__mouse_2, .carac__pantalla_1, .carac__pantalla_2, .carac__pc_1, .carac__pc_2{
+        background-color: rgb(35, 26, 46);
+        font-size: 12px;
+        text-align: justify;
+        color: violet;
+    }
+    & .carac_teclado_1{
+        grid-row: 3/3;
+        grid-column: 1/1;
+    }
+    
+    & .carac_teclado_2{
+        grid-row: 3/3;
+        grid-column: 2/2;
+    }
+    
+    & .carac__mouse_1{
+        grid-row: 3/3;
+        grid-column: 3/3;
+    }
+    
+    & .carac__mouse_2{
+        grid-row: 3/3;
+        grid-column: 4/4;
+    }
+    
+    & .carac__pantalla_1{
+        grid-row: 7/7;
+        grid-column: 1/1;
+    }
+    
+    & .carac__pantalla_2{
+        grid-row: 7/7;
+        grid-column: 2/2;
+    }
+    & .carac__pc_1{
+        grid-row: 7/7;
+        grid-column: 3/3;    
+    }
+    
+    & .carac__pc_2{
+        grid-row: 7/7;
+        grid-column: 4/4;    
+    }
+    
+    & .precio_teclado_1, .precio_teclado_2, .precio__mouse_1 , .precio__mouse_2, .precio__pantalla_1, .precio__pantalla_2, .precio__pc_1, .precio__pc_2{
+        background-color: rgb(35, 26, 46);
+        font-size: 18px;
+        text-align: center;
+        color:red;
+        margin-bottom: 1%;
+    }
+    
+    & .precio__teclado_1{
+        grid-column: 1/1;
+        grid-row: 4/4;
+    }
+    
+    & .precio_teclado_2{
+        grid-column: 2/2;
+        grid-row: 4/4;
+    }
+    
+    & .precio__mouse_1{
+        grid-column: 3/3;
+        grid-row: 4/4;
+    }
+    
+    & .precio__mouse_2{
+        grid-column: 4/4;
+        grid-row: 4/4;
+    }
+    
+    & .precio__pantalla_1{
+        grid-column:1/1;
+        grid-row:8/8;
+    }
+    
+    & .precio__pantalla_2{
+        grid-column:2/2;
+        grid-row:8/8;
+    }
+    
+    & .precio__pc_1{
+        grid-column:3/3;
+        grid-row:8/8;
+    }
+    
+    & .precio__pc_2{
+        grid-column:4/4;
+        grid-row:8/8;
+    }
+    & .img__teclado_1 , .img__teclado_2 , .img__mouse_1, .img__mouse_2, .img__pantalla_1, .img__pantalla_2, .img__pc_1, .img__pc_2{
+        width: 100%;
+        height: 280px;
+        transition: all .3s ease-in-out;
+    }
+    
+    & .img__teclado_1{
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    
+    & .img__teclado_2{
+        grid-column: 2/2;
+        grid-row: 1/1;
+    }
+    
+    & .img__mouse_1{
+        grid-column: 3/3;
+        grid-row: 1/1;
+    }
+    
+    & .img__mouse_2{
+        grid-row: 1/1;
+        grid-column: 4/4;
+    }
+    & .img__pantalla_1{
+        grid-row: 5/5;
+        grid-column: 1/1;
+    }
+    & .img__pantalla_2{
+        grid-row: 5/5;
+        grid-column: 2/2;
+    }
+    
+    & .img__pc_1{
+        grid-column:3/3;
+        grid-row:5/5;
+    }
+    
+    & .img__pc_2{
+        grid-column:4/4;
+        grid-row:5/5;
+    }
+    & .img__teclado_1:hover , .img__teclado_2:hover, .img__mouse_1:hover ,.img__mouse_2:hover , .img__pantalla_1:hover, .img__pantalla_2:hover, .img__pc_1:hover, .img__pc_2:hover{
+        transform: scale(0.9);
+        transform-origin: center center;
+    }
+}
+
+/* finaliza Section de productos.html*/
+/*----------------------------- */

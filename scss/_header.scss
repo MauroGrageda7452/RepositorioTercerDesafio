@@ -1,0 +1,65 @@
+// inicio de header 
+header{
+    width: 100%;
+    padding-bottom: 16px;
+
+    & #caja_logo_header{
+        & #img_logo_header{
+            opacity: 0.5;
+        }
+        & #img_logo_header:hover{
+            opacity: 1.0;
+        }
+    }
+    & div{
+        display: flex;
+        margin-top: 1%;
+        width: 100%;
+        & h1{
+            height: 32px;
+            width: 100%;
+            color: $color-title;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 34px;
+            animation-duration: 3s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
+        }
+        @keyframes aparecer {
+            0% {
+            opacity: 0;
+            }
+            100% {
+            opacity: 1;
+            }
+        }
+    }
+    & nav{           
+        background-color: rgb(46, 37, 58);
+        margin-top: 1rem;
+        & ul{
+            margin-left: auto;
+            width: 100%;
+            list-style: none;
+            background-color: rgb(46, 37, 58);
+            & .nav-item{
+                font-size: 1rem;
+                & .nav-link{
+                    color: darkcyan !important;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    padding: 3px 0;
+                }
+                & .nav-link:hover{
+                    background-color: aqua;
+                }
+                & .nav-link:active{
+                    background-color:  rgb(100, 24, 136);
+                }
+            }
+        }
+    }
+}
+/* finaliza header */
+/*----------------------------- */
