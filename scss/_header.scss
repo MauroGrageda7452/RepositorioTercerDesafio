@@ -3,19 +3,18 @@ header{
     width: 100%;
     padding-bottom: 16px;
 
+    & #caja_logo_header{
+        & #img_logo_header{
+            opacity: 0.5;
+        }
+        & #img_logo_header:hover{
+            opacity: 1.0;
+        }
+    }
     & div{
         display: flex;
         margin-top: 1%;
         width: 100%;
-
-        & a{ 
-            & .img-thumbnail{
-                opacity: 0.5;
-            }
-            &.img-thumbnail:hover{
-                opacity: 1.0;
-            }
-        }
         & h1{
             height: 32px;
             width: 100%;
@@ -58,10 +57,7 @@ header{
                 & .nav-link:active{
                     background-color:  rgb(100, 24, 136);
                 }
-
             }
-            
-
         }
     }
 }

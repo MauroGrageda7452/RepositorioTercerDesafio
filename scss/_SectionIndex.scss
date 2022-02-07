@@ -3,20 +3,18 @@
 
 .set_up{
     width: 60%;
-    height: 225px;
     margin: auto;
     margin-bottom: 16px;
     display: flex;
-    box-shadow: 10px 10px;
 }    
 // dos columnas por 4 filas
 
 .contenedor__productos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 2%;
-    padding-right: 2%;
-    grid-column-gap: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-column-gap: 4%;
     
     & .caja__productos{
         border: none;

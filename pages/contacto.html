@@ -9,17 +9,17 @@
     <title>Contacto-Computer S.A</title>
 
     <meta name="description" content="Contactanos para tu compra equipo/s de computadora o cualquier consulta, que vos necesites.">
-    <meta name="keywords" content="formulario para venta, tienda gamer capital federal,horarios de tienda gamer">
+    <meta name="keywords" content="formulario venta,capital federal,horarios">
     <meta name="author" content="Computers S.A">
-    <link rel="computers icon" href="../multimedia/Logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../multimedia/Logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 </head>
 <body>
     <!-- fila de logo+ nav-->
     <header> <!-- Header, tenes lo visible lo que usuario va a ver-->
-        <div class="col-12">
-            <a  href="index.html"><img src="/multimedia/Logo.jpg" alt="reparacion de icono de computadora" allowfullscreen="" class="img-thumbnail" width="62px" height= "32px" loading="lazy"></a>
+        <div class="col-12" id="caja_logo_header">
+            <a  href="index.html"><img src="/multimedia/Logo.jpg" alt="reparacion de icono de computadora" allowfullscreen="" class="img-thumbnail" id="img_logo_header" width="62px" height= "32px" loading="lazy"></a>
             <h1>CONTACTO!</h1>
         </div>
         <!-- nav + logo -->
@@ -56,67 +56,77 @@
     
     <!-- formulario de contacto-->
     <section>
-        <div class="contenedor--sectioncontacto">
-            <article>
-                <div class="caja__contacto">
-                    <form class="form--contacto">
-                        <div class="for-group">
-                            <label for="name">Nombre:</label>
-                            <input type="text" placeholder="Escribir Nombre" id="name"  name="name" required><br>
+        <article>
+            <div class="container">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name" class="control-label">Nombre:</label>
+                        <div class="">
+                            <input type="text" class="form-control" placeholder="Escribir Nombre" id="name"  name="name" required><br>
                         </div>
-                        <div>
-                            <label for="apellido">Apellido:</label>
-                            <input type="text" placeholder="Escribir Apellido"name="apellido" id="apellido"required><br>
-                        </div>
-                        <div>
-                            <label for="email">Decime tu email:</label>
-                            <input type="email" placeholder="aaa@gmail.com" name="email" id="email" required><br>
-                        </div>
-
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido" class="control-label">Apellido:</label>
+                        <input type="text" class="form-control"placeholder="Escribir Apellido" name="apellido" id="apellido"required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Decime tu email:</label>
+                        <input type="email" class="form-control" placeholder="aaa@gmail.com" name="email" id="email" required><br>
+                    </div>
+                    <div class="form-group">
                         <label for="telefono">Telefono:</label> 
-                        <input type="text" required placeholder="Escribir su telefono o celular" id="telefono" required> <br>
-                        <label for="Descripcion"> Descripcion de Entrega:</label><br>
-                        <textarea placeholder="Descripcion" id="Descripcion"required></textarea><br>
-            
-                        <div>
-                            <label for=""> Primera vez con nosotros</label>
+                        <input type="text"class="form-control" required placeholder="Escribir su telefono o celular" id="telefono" required> <br>
+                    </div>
+                    <div class="form-group">
+                        <label  for="Descripcion"> Descripcion de Entrega:</label><br>
+                        <textarea class="form-control" placeholder="Descripcion" id="Descripcion"required></textarea><br>
+                    </div>
+                    <div class="form-group row">
+                        <div class="form-group col-md-6 col-lg-4">
+                            <label for="control-label"> Primera vez con nosotros</label>
                             <label for ="si">Si</label>
                             <input type="radio" name="lado" value="si" id="si">
                             <label for ="no">No</label>
                             <input type="radio" name="lado" value="no" id="no">
                         </div>
-                        <label for="letra">Forma de pago?</label>
-                        <select name="letra" id="letra"> 
-                            <option value="efectivo">Efectivo</option> 
-                            <option value="tarjeta">Debito o Credito</option>
-                            <option value="mercado">Mercado Pago</option>
-                        </select>
-                        <div>
-                            <label for="condiciones">Acepto todos los termino y condiciones</label>
-                            <input type="checkbox" name="acepta" value="1" id="condiciones" required>
+                        <div class="form-group col-md-5 col-lg-4">
+                            <label for="letra" class="control-label">Forma de pago?</label>
+                            <select name="letra" id="letra"> 
+                                <option value="efectivo">Efectivo</option> 
+                                <option value="tarjeta">Debito o Credito</option>
+                                <option value="mercado">Mercado Pago</option>
+                            </select>
                         </div>
-                        <input type="submit" value="CONFIRMAR COMPRA">
-                        <input type="reset" value="RESETEAR ">
-                    </form>
-                </div>
-            </article>
-            <!-- cierre de form contacto-->
-            <article>
+                        <div class="form-group col-md-12 col-lg-4">
+                            <label for="condiciones " class="control-label">Acepto los terminos y condiciones</label>
+                            <input type="checkbox" class="" name="acepta" value="1" id="condiciones" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        
+                        <input class="btn btn-primary offset-md-2 offset-lg-3" type="submit" value="CONFIRMAR COMPRA">
+                        <input class="btn btn-primary offset-md-2 offset-lg-2" type="reset" value="RESETEAR ">
+                    </div>    
+                </form>
+            </div>    
+        </article>
+        <article>
+            <div class="container">
                 <div class="texthorarios__caja">
                     <p class="text__horarios"> Cualquier duda, nos encontraras entre las 9 a 19 hs, solo de Lunes a Viernes.</p>
                 </div>
                 <div class="imgmaps__caja">
-                    <iframe class="imgmaps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.020598199738!2d-58.37468197079351!3d-34.60207799877874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc6871eb61%3A0xce94e66fa2acafad!2sCompugarden!5e0!3m2!1ses!2sar!4v1637624136942!5m2!1ses!2sar" width="190" height="110"  loading="lazy"></iframe>
+                    <iframe class="imgmaps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.020598199738!2d-58.37468197079351!3d-34.60207799877874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc6871eb61%3A0xce94e66fa2acafad!2sCompugarden!5e0!3m2!1ses!2sar!4v1637624136942!5m2!1ses!2sar" loading="lazy"></iframe>
                 </div>
-
-            </article>
-        </div>
+            </div>
+        </article>
     </section>
     <!-- cierre de informacion de mi sitio-->
     <!-- inicio de footer-->
     <footer>
-        <div class="col-xl-12">
-            <a class="mav-link" href="index.html"><img src="../multimedia/Logo.jpg" alt="reparacion de icono de computadora" allowfullscreen="" loading="lazy"  width="62px" height= "32px"  class="img-thumbnail"></a>
+        <div class="col-xl-12 caja_logo">
+            <a class="mav-link" href="index.html"><img src="../multimedia/Logo.jpg" alt="reparacion de icono de computadora" allowfullscreen="" loading="lazy"  width="62px" height= "32px"  class="img-thumbnail img__logo"></a>
         </div>
         <div class="container-fluid">
             <div class="row">

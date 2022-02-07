@@ -17,16 +17,16 @@ header {
   width: 100%;
   padding-bottom: 16px;
 }
+header #caja_logo_header #img_logo_header {
+  opacity: 0.5;
+}
+header #caja_logo_header #img_logo_header:hover {
+  opacity: 1;
+}
 header div {
   display: flex;
   margin-top: 1%;
   width: 100%;
-}
-header div a .img-thumbnail {
-  opacity: 0.5;
-}
-header div a.img-thumbnail:hover {
-  opacity: 1;
 }
 header div h1 {
   height: 32px;
@@ -77,19 +77,17 @@ header nav ul .nav-item .nav-link:active {
 /*----------------------------- */
 .set_up {
   width: 60%;
-  height: 225px;
   margin: auto;
   margin-bottom: 16px;
   display: flex;
-  box-shadow: 10px 10px;
 }
 
 .contenedor__productos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-left: 2%;
-  padding-right: 2%;
-  grid-column-gap: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  grid-column-gap: 4%;
 }
 .contenedor__productos .caja__productos {
   border: none;
@@ -360,7 +358,9 @@ header nav ul .nav-item .nav-link:active {
 /*----------------------------- */
 /* inicio de section nosotros.hmtl */
 .contenedor__CajaNosotros {
-  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .contenedor__CajaNosotros .CajaQuienesSomos .QuienesSomos {
   background-color: #231a2e;
@@ -379,45 +379,32 @@ header nav ul .nav-item .nav-link:active {
   font-size: 1em;
 }
 .contenedor__CajaNosotros .CajaTiendaImg .TiendaImg {
+  width: 100%;
+  height: 100%;
   border: none;
 }
 
 /* cierre de section nosotros.hmtl */
 /*----------------------------- */
 /* inicio de section contacto.html */
-.contenedor--sectioncontacto {
-  display: grid;
-  flex-direction: column;
-}
-.contenedor--sectioncontacto .caja__contacto {
-  display: grid;
-  width: 100%;
-  height: 100%;
-}
-.contenedor--sectioncontacto .caja__contacto .form--contacto {
-  background-color: #231a2e;
+form {
   color: #7d10af;
+  background-color: #231a2e;
   font-style: italic;
+  opacity: 0.9;
 }
-.contenedor--sectioncontacto .caja__contacto .form--contacto label {
-  font-weight: bold;
-  font-size: 25px;
-}
-.contenedor--sectioncontacto .caja__contacto .form--contacto input {
-  font-size: 0.3em;
-}
-.contenedor--sectioncontacto .caja__contacto .form--contacto select {
-  font-size: 0.3em;
-}
-.contenedor--sectioncontacto .text__horarios {
+
+.text__horarios {
   color: #7d10af;
   background-color: #231a2e;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.2em;
   margin-bottom: 0%;
+  opacity: 0.9;
 }
-.contenedor--sectioncontacto .imgmaps {
-  height: 100%;
+
+.imgmaps {
+  height: 500px;
   width: 100%;
 }
 
@@ -431,10 +418,13 @@ footer {
   color: white;
   font-style: italic;
 }
-footer div a .img-thumbnail {
+footer .caja_logo {
+  padding-bottom: 2%;
+}
+footer .caja_logo .img__logo {
   opacity: 0.5;
 }
-footer div a.img-thumbnail:hover {
+footer .caja_logo .img__logo:hover {
   opacity: 1;
 }
 footer div ul {
@@ -468,8 +458,6 @@ footer div ul .nav-link {
 
   .contenedor__productos {
     grid-template-columns: 1fr;
-    padding-right: 5%;
-    padding-left: 5%;
   }
   .contenedor__productos .caja__productos {
     width: 290px;
@@ -669,28 +657,12 @@ footer div ul .nav-link {
 
   .contenedor__CajaNosotros {
     grid-template-rows: 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .contenedor__CajaNosotros .TiendaImg {
     margin-top: 10%;
     margin-bottom: 10%;
-  }
-
-  .contenedor--sectioncontacto {
-    grid-row-gap: 2%;
-    grid-template-rows: 1fr;
-  }
-  .contenedor--sectioncontacto .caja__contacto .form--contacto label {
-    font-weight: bold;
-  }
-  .contenedor--sectioncontacto .caja__contacto .form--contacto input {
-    font-size: 1em;
-  }
-  .contenedor--sectioncontacto .caja__contacto .form--contacto select {
-    font-size: 0.5em;
-  }
-  .contenedor--sectioncontacto .imgmaps__caja {
-    height: 625px;
-    width: 100%;
   }
 
   footer div ul {
@@ -701,8 +673,6 @@ footer div ul .nav-link {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .contenedor__productos {
     grid-template-columns: 1fr 1fr;
-    padding-left: 5%;
-    padding-right: 5%;
   }
   .contenedor__productos .imgs__prod {
     margin-bottom: 16px;
@@ -868,55 +838,13 @@ footer div ul .nav-link {
     width: 275px;
   }
 
-  .contenedor__promos .PromoImg {
-    width: 95%;
-    height: 750px;
-  }
-  .contenedor__promos .PromoText {
-    margin-left: 39.5%;
-    margin-right: 39.5%;
-  }
-
-  .contenedor__CajaNosotros .CajaQuienesSomos {
-    grid-column: 1/1;
-    grid-row: 1/1;
+  .contenedor__CajaNosotros {
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .contenedor__CajaNosotros .CajaTiendaImg {
-    grid-column: 1/1;
-    grid-row: 2/2;
-  }
-  .contenedor__CajaNosotros .CajaTiendaImg .TiendaImg {
-    width: 100%;
-    height: 93%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-  }
-  .contenedor__CajaNosotros .CajaTextDueños {
-    grid-column: 1/1;
-    grid-row: 3/3;
-  }
-
-  .contenedor--sectioncontacto .caja__contacto {
-    justify-content: center;
-  }
-  .contenedor--sectioncontacto .caja__contacto .form--contacto {
-    margin-bottom: 16px;
-  }
-  .contenedor--sectioncontacto .caja__contacto .form--contacto label {
-    font-weight: bold;
-  }
-  .contenedor--sectioncontacto .caja__contacto .form--contacto input {
-    font-size: 1em;
-  }
-  .contenedor--sectioncontacto .caja__contacto .form--contacto select {
-    font-size: 1em;
-  }
-  .contenedor--sectioncontacto .texthorarios__caja {
-    text-align: center;
-    font-size: 25px;
-  }
-  .contenedor--sectioncontacto .imgmaps__caja {
-    height: 280px;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1920px) {
@@ -926,9 +854,6 @@ footer div ul .nav-link {
 
   .contenedor__productos {
     grid-template-columns: 1fr 1fr;
-    padding-left: 2%;
-    padding-right: 2%;
-    grid-column-gap: 2%;
   }
   .contenedor__productos .caja__productos {
     width: 100%;
@@ -939,7 +864,7 @@ footer div ul .nav-link {
 
   .set_up {
     width: 60%;
-    height: 225px;
+    height: 300px;
   }
 
   .Contenedor__Prod {
@@ -972,10 +897,8 @@ footer div ul .nav-link {
   .contenedor__CajaNosotros {
     grid-template-columns: 1fr 1fr;
     display: grid;
-    grid-column-gap: 30px;
-    padding-right: 32px;
-    padding-left: 32px;
-    font-size: 1.7em;
+    grid-column-gap: 4%;
+    font-size: 1.2em;
   }
   .contenedor__CajaNosotros .CajaQuienesSomos {
     grid-column: 1/1;
